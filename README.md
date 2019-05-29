@@ -6,6 +6,7 @@ Some guides for setting up your own OSM tile server on either Ubuntu or Fedora. 
 You can find an installation guide for both ubuntu and fedora in their respective markdown-files.
 
 [Fedora](https://github.com/Crited/OSM-for-Icinga/blob/master/doc/01-Fedora.md)
+
 [Ubuntu](https://github.com/Crited/OSM-for-Icinga/blob/master/doc/01-Ubuntu.md)
 
 
