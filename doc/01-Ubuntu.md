@@ -155,7 +155,7 @@ carto project.mml > mapnik.xml
 You should have a Mapnik XML stylesheet at `/home/username/src/openstreetmap-carto/mapnik.xml` now.
 
 ## Data
-Intially, we'll only load a small amount of test data. We'll use *montenegro*, which is currently about *20 MB* in size. 
+Initially, we'll only load a small amount of test data. We'll use *montenegro*, which is currently about *20 MB* in size. 
 http://download.geofabrik.de/europe/montenegro-latest.osm.pbf
 
 ```sh
