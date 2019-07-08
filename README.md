@@ -11,6 +11,6 @@ You can find an installation guide for both ubuntu and fedora in their respectiv
 
 
 ## Updates, Contributing & so on...
-I am not certain if i will maintain this repository. Neither am I aware If I am able to maintain this repository. I'll try I guess? If you want to contribute, feel free to fork the project to your GitHub account, give the branch a useful name that tells me whats going on there, aswell as a good commit message --> Pull request and thats it.
+I am not certain if I will maintain this repository. Neither am I aware If I am able to maintain this repository. I'll try I guess? If you want to contribute, feel free to fork the project to your GitHub account, give the branch a useful name that tells me whats going on there, aswell as a good commit message --> Pull request and thats it.
 
 But probably, I'll checkout all of the stuff you guys do here, even If you don't organize it nicely. Let me just say: *I would appreciate it.* 
