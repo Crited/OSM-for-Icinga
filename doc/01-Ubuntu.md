@@ -25,11 +25,11 @@ Pretty much everything that's written here is based on: **[switch2osm](https://s
 ## Dependencies
 
 This *[OSM](https://www.openstreetmap.org/#map=3/19.97/10.11) tile server* setup is build around five major parts: *[mod_tile](https://wiki.openstreetmap.org/wiki/Mod_tile); renderd; [mapnik](https://wiki.openstreetmap.org/wiki/Mapnik); [osm2pgsql](https://wiki.openstreetmap.org/wiki/Osm2pgsql); [postgis](https://wiki.openstreetmap.org/wiki/PostGIS)*.
-I'll explain these as we get to it. In order to install all of these components, some dependencies *have* to be resolved first.
+I'll explain these as we get to them. In order to install all of these components, some dependencies *have* to be resolved first.
 ```sh
 sudo apt install libboost-all-dev git-core tar unzip wget bzip2 build-essential autoconf libtool libxml2-dev libgeos-dev libgeos++-dev libpq-dev libbz2-dev libproj-dev munin-node munin libprotobuf-c0-dev protobuf-c-compiler libfreetype6-dev libtiff5-dev libicu-dev libgdal-dev libcairo-dev libcairomm-1.0-dev apache2 apache2-dev libagg-dev liblua5.2-dev ttf-unifont lua5.1 liblua5.1-dev libgeotiff-epsg curl
 ```
-Later on we will need the osmadmins-repository might aswell add it now:
+Later on we will need the osmadmins-repository, so we might aswell add it now:
 ```sh
 sudo add-apt-repository ppa:osmadmins/ppa
 sudo apt-get update
@@ -129,7 +129,7 @@ sudo apt-get install libapache2-mod-tile
 ```
 
 ## Stylesheet
-We pretty much installed everything thats necessary, but now we will have to download and configure a stylesheet.
+We pretty much installed everything thats necessary, but now we'll have to download and configure a stylesheet.
 
 The style we'll use here is the one that is used by the *default map* on [openstreetmap.org](ttps://www.openstreetmap.org/#map=3/19.97/10.11). OpenStreetMap Carto can be found [here](https://github.com/gravitystorm/openstreetmap-carto/).
 
@@ -281,7 +281,7 @@ systemctl restart renderd
 ```
 
 ## Use with icinga2-module-map
-If you want to use this vagrant box for your icinga-2-module-map, you just have to add this: 
+If you want to use this with icinga-2-module-map, you just have to add this: 
 `http://localhost/hot/{z}/{x}/{y}.png` 
 
 Just login to your **web-interface**. Navigate down to **configuration** and choose **modules**. You should find **map** somewhere here, If you installed the maps-module correctly beforehand. Change from the **module:map**-tab to the **configuration**-tab and add *http://localhost/hot/{z}/{x}/{y}.png* to **URL for tile server**, which should be empty by default - so it uses the *openstreetmaps-servers*
